@@ -1,0 +1,12 @@
+public static Integer arraySum(List<Integer> numbers) {
+    Integer sum = 0;
+   if(numbers != null)
+   {
+       for(Integer num : numbers)
+       {
+           sum = sum+num;
+       }
+       return sum;
+   }
+   else return null;
+}
