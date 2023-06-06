@@ -4,7 +4,7 @@ public List<Integer> positiveIntegers(List<Integer> numbers) {
     {
         if(i>0)
         {
-            nonneg.add(i)
+            nonneg.add(i);
         }
     }
     return nonneg;
