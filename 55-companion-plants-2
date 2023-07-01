@@ -14,15 +14,15 @@ if(plants.size() == 1)
 {
     return false;
 }
-    for(integer i=0;i<plants.size();i++)
-    {
+for(integer i=0;i<plants.size();i++)
+{
         set<String> plantSet = plantsmap.get(plants[i]);
         if(!plantSet.contains(plants[i+1]))
         {
             return false;
         }
        
-    }
-     else return true;
+}
+return true;
 
 }
