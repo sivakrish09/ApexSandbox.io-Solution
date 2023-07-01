@@ -5,6 +5,7 @@ plantsmap.put('onions',new set<String> {'lettuce','carrots'});
 plantsmap.put('lettuce',new set<String> {'onions','cucumbers'});
 plantsmap.put('carrots',new set<String> {'onions'});
 plantsmap.put('cucumbers',new set<String> {'lettuce'});
+plantsmap.put('tomatoes', new Set<String>{'onions'});
 
 if(plants.size() == 0)
 {
