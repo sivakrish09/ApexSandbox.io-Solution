@@ -14,8 +14,6 @@ if(plants.size() == 1)
 {
     return false;
 }
-if(plants.size()>1)
-{
     for(integer i=0;i<plants.size();i++)
     {
         set<String> plantSet = plantsmap.get(plants[i]);
@@ -25,6 +23,6 @@ if(plants.size()>1)
         }
         else return true;
     }
+    
 
-}
 }
