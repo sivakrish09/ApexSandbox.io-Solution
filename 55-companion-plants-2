@@ -1,0 +1,14 @@
+public Boolean companionPlants(List<String> plants) {
+    for(Integer i=0;i<plants.size();i++)
+    {
+        if(plants[i]=='carrots'&& plants[i+1]=='lettuce')
+        {
+            return false;
+        }
+        else if(plants[i]=='lettuce'&& plants[i+1]=='carrots')
+        {
+            return false;
+        }
+        else return true;
+    }
+}
