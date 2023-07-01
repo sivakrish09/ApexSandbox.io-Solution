@@ -23,8 +23,8 @@ if(plants.size()>1)
         {
             return false;
         }
-        else true;
+        else return true;
     }
-    
+
 }
 }
