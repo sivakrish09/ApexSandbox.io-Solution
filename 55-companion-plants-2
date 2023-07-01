@@ -9,6 +9,10 @@ public Boolean companionPlants(List<String> plants) {
         {
             return false;
         }
-        else return true;
+        else
+        {
+            return true;
+        }
+        
     }
 }
