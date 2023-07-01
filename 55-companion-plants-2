@@ -21,8 +21,8 @@ if(plants.size() == 1)
         {
             return false;
         }
-        else return true;
+       
     }
-    
+     else return true;
 
 }
