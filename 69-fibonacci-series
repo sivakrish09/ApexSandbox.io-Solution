@@ -1,8 +1,8 @@
 public List<Integer> fibonacciSeries(Integer n) {
     List<Integer> numList = new List<Integer>();
-    for(Integer i =1;i<=n;i++)
+    for(Integer i =0;i<=n;i++)
     {
-        if(i==1)
+        if(i<=1)
         {
             numList.add(1);
         }
