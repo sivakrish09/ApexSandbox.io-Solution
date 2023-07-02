@@ -8,7 +8,7 @@ public List<Integer> fibonacciSeries(Integer n) {
         }
         else
         {
-            Integer fibo = numList[i]+numList[i-1];
+            Integer fibo = numList[i-1]+numList[i-2];
             numList.add(fibo);
         }
     }
