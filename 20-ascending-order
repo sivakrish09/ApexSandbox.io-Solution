@@ -2,16 +2,19 @@ public Boolean ascendingOrder(Integer a, Integer b, Integer c) {
     //code here
     if(a<=b && a<c)
     {
+        if(a == b)
+        {
+            if(a==c)
+            {
+                return true;
+            }
+        }
         if(b<=c)
         {
             return true;
         }
         else
             return false;
-    }
-    else if(a==b==c)
-    {
-        return true;
     }
     else
         return false;
