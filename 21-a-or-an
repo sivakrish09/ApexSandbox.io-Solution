@@ -1,6 +1,6 @@
 public String aOrAn(String word) {
     //code here
-    List<String> varIndivialWord = word.split();
+    List<String> varIndivialWord = word.split('');
     if(varIndivialWord[0].Contains('a','e','i','o','u'))
     {
         return 'an '+word;
