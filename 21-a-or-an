@@ -6,6 +6,26 @@ public String aOrAn(String word) {
        result = 'an '+word;
        return result;
    }
+      else if(word.startsWithIgnoreCase('e'))
+   {
+       result = 'an '+word;
+       return result;
+   }
+      else if(word.startsWithIgnoreCase('i'))
+   {
+       result = 'an '+word;
+       return result;
+   }
+     else if(word.startsWithIgnoreCase('o'))
+   {
+       result = 'an '+word;
+       return result;
+   }
+     else if(word.startsWithIgnoreCase('u'))
+   {
+       result = 'an '+word;
+       return result;
+   }
    
    else 
    {
