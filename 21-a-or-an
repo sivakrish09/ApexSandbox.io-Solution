@@ -1,7 +1,9 @@
 public String aOrAn(String word) {
     //code here
+    string result;
    if(word.startsWithIgnoreCase('a'))
    {
-       return 'an '+word;
+       result = 'an '+word;
+       return result;
    }
 }
