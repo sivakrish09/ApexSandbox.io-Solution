@@ -1,36 +1,6 @@
 public String aOrAn(String word) {
-    //code here
-    string result;
-   if(word.startsWithIgnoreCase('a'))
-   {
-       result = 'an '+word;
-       return result;
-   }
-      else if(word.startsWithIgnoreCase('e'))
-   {
-       result = 'an '+word;
-       return result;
-   }
-      else if(word.startsWithIgnoreCase('i'))
-   {
-       result = 'an '+word;
-       return result;
-   }
-     else if(word.startsWithIgnoreCase('o'))
-   {
-       result = 'an '+word;
-       return result;
-   }
-     else if(word.startsWithIgnoreCase('u'))
-   {
-       result = 'an '+word;
-       return result;
-   }
-   
-   else 
-   {
-       result = 'a '+word;
-       return result;
-   }
-       
+    String result = (word.startsWithIgnoreCase('a') || word.startsWithIgnoreCase('e') ||
+                     word.startsWithIgnoreCase('i') || word.startsWithIgnoreCase('o') ||
+                     word.startsWithIgnoreCase('u')) ? 'an ' + word : 'a ' + word;
+    return result;
 }
