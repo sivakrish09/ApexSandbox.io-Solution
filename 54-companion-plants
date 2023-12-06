@@ -8,6 +8,6 @@ public Boolean companionPlants(String plant1, String plant2) {
     plantMap.put('carrots', new List<String>('onions'));
     plantMap.put('tomatoes', new List<String>('onions'));
 
-    return plantMap.get(plant1).values.contains(plant2);
+    return plantMap.get(plant1).contains(plant2);
 }
 
