@@ -1,8 +1,8 @@
 public Boolean isEndWithZero(Integer num){
      //code here
    // return Math.mod(num,10)==0 ? true:false;
-       // Get the last digit of the number
-    Integer lastDigit = num % 10;
+    // Get the last digit of the number
+    Integer lastDigit = num & 10;
 
     // Check if the last digit is zero
     return lastDigit == 0;
