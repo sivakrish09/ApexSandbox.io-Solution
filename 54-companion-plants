@@ -1,13 +1,13 @@
 public Boolean companionPlants(String plant1, String plant2) {
     //code here
-
-    Map<String,List<String>> plantMap = new Map<String,List<String>>();
-    plantMap.put('lettuce',new List<String>('cucumbers','onions'));
-    plantMap.put('cucumbers', new List<String>('lettuce'));
-    plantMap.put('onions', new List<String>('lettuce','carrots','tomatoes'));
-    plantMap.put('carrots', new List<String>('onions'));
-    plantMap.put('tomatoes', new List<String>('onions'));
+    Map<String, List<String>> plantMap = new Map<String, List<String>>();
+    plantMap.put('lettuce', new List<String>{'cucumbers', 'onions'});
+    plantMap.put('cucumbers', new List<String>{'lettuce'});
+    plantMap.put('onions', new List<String>{'lettuce', 'carrots', 'tomatoes'});
+    plantMap.put('carrots', new List<String>{'onions'});
+    plantMap.put('tomatoes', new List<String>{'onions'});
 
     return plantMap.get(plant1).contains(plant2);
 }
+
 
