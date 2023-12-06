@@ -1,0 +1,11 @@
+public Integer rockPaperScissors(String player1, String player2) {
+    //code here
+   Map<String,Integer> resultComp = new Map<String,Integer> ();
+   resultComp.put('rock',1);
+   resultComp.put('paper',2);
+   resultComp.put('scissors',3);
+   if(resultComp.get(player1) > resultComp.get(player2)) return 1;
+   else if(resultComp.get(player1) < resultComp.get(player2)) return 2;
+   else return 0;
+
+}
