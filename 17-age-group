@@ -1,5 +1,5 @@
 public String ageGroup(Integer n) {
     //code here
-    return (n >= 22)?'Adult':(n >= 15 && n <= 21 )? 'Youth':(n >= 2 && n <= 14 )? 'Child': 'Infant'
+    return (n >= 22)?'Adult':(n >= 15 && n <= 21 )? 'Youth':(n >= 2 && n <= 14 )? 'Child': 'Infant';
 
 }
