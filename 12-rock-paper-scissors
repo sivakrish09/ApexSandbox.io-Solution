@@ -1,7 +1,7 @@
 public Integer rockPaperScissors(String player1, String player2) {
     //code here
     
-   Map<String,String> resultComp = new Map<String,Integer> ();
+   Map<String,String> resultComp = new Map<String,String> ();
    resultComp.put('rock','scissors');
    resultComp.put('scissors','paper');
    resultComp.put('paper','rock');
