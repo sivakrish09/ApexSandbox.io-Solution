@@ -1,0 +1,16 @@
+public String reverseWordsInASentence(String sentence){
+    //your flawless code here
+    String inputReverse = sentence.reverse();
+    List<String> inputReverseList = inputReverse.split(' ');
+    List<String> loopString = new List<String>();
+    for(String s: inputReverseList)
+    {
+        String name = s.reverse();
+        loopString.add(name);
+
+    }
+
+    String nameFinal = String.valueOf(loopString);
+    return nameFinal.remove(',');
+
+}
