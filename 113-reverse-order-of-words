@@ -12,5 +12,5 @@ public String reverseWordsInASentence(String sentence){
 
     String nameFinal = String.valueOf(loopString);
     //String nameFinal2 = nameFinal.remove(',');
-    return nameFinal2;
+    return nameFinal;
 }
