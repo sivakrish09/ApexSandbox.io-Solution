@@ -1,0 +1,24 @@
+public Integer nextPrime(Integer num) {
+    //code here
+
+    Integer nextPrime = num;
+    Boolean isPrime = false;
+    while(isPrime == false)
+    {
+        nextPrime++;
+
+        for(Integer i =2; i<nextPrime; i++)
+        {
+            if(Math.mod(nextPrime,i)==0)
+            {
+                isPrime = false;
+                break;
+            }
+            else
+            {
+                isPrime = true;
+            }
+        }
+    }
+    return nextPrime;
+}
