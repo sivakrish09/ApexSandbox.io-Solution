@@ -1,0 +1,10 @@
+public Integer fibonacci(Integer n) {
+    //code here
+    List<Integer> fiboList = new List<Integer>{1,1};
+    for(Integer i =1;i<=n;i++)
+    {
+        Integer fibo = fiboList[i]+fiboList[i-1];
+        fiboList.add(fibo);
+    }
+    return fiboList[n-1];
+}
