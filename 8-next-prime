@@ -3,7 +3,11 @@ public Integer nextPrime(Integer num) {
 
     Integer nextPrime = num;
     Boolean isPrime = false;
-    while(nextPrime >2)
+    if(num <=1)
+    {
+        return 2;
+    }
+    else
     {
             while(isPrime == false)
     {
@@ -22,6 +26,6 @@ public Integer nextPrime(Integer num) {
             }
         }
     }
-    }
     return nextPrime;
+    }
 }
