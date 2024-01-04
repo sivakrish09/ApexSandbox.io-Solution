@@ -5,7 +5,7 @@ public Id insertCourse(String name, String details, Integer credits) {
         Course.Name = name;
         Course.apxio__Course_Details__c = details;
         Course.apxio__Credits__c = String.ValueOf(credits);
-        if(credits >0 && credits <5 )
+        if(credits > 0 || credits <5 )
         {
             insert Course;
             return Course.id;
