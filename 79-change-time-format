@@ -3,14 +3,14 @@ public String changeTimeFormat(String strTime) {
     List<String> parts = strTime.split(':');
     Integer hour = Integer.valueOf(parts[0]);
     String Suffix = ' AM';
-
+    if(hour == 12) Suffix = ' PM';
     if(hour == 0) 
     {
         hour = 12;
         Suffix = ' AM';
     }
     
-    if(hour == 12) Suffix = ' PM';
+    
     if(hour > 12) 
     {
         hour = hour -12;
