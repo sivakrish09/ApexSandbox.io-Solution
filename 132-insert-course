@@ -1,17 +1,15 @@
 public Id insertCourse(String name, String details, Integer credits) {
 
-    apxio__Course__c c = new apxio__Course__c(Name=name,apxio__Course_Details__c = details);
+if(credits >= 1 && credits <= 4)    
 
-    c.apxio__Credits__c = '1234'.contains(String.valueOf(credits))?String.valueOf(credits):null;
+{apxio__Course__c apCourse = new apxio__Course__c();     
 
-    if (c.apxio__Credits__c!=null)
+apCourse.Name = name;      
 
-    {
+apCourse.apxio__Course_Details__c = details;     
 
-        insert c;
+apCourse.apxio__Credits__c = String.valueof(credits);     
 
-    }
+insert apCourse;        
 
-    return c.Id;
-
-}
+return apCourse.id;    }    return null;}
