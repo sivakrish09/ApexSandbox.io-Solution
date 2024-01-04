@@ -4,7 +4,12 @@ public String changeTimeFormat(String strTime) {
     Integer hour = Integer.valueOf(parts[0]);
     String Suffix = ' AM';
 
-    if(hour == 0) hour = 12;
+    if(hour == 0) 
+    {
+        hour = 12;
+        Suffix = ' AM';
+    }
+    
     if(hour == 12) Suffix = ' PM';
     if(hour > 12) 
     {
