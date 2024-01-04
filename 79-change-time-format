@@ -2,7 +2,7 @@ public String changeTimeFormat(String strTime) {
     //code here
     List<String> parts = strTime.split(':');
     Integer hour = Integer.valueOf(parts[0]);
-    String Suffix = ' AM';
+    String Suffix;
 
     if(hour == 0) 
     {
