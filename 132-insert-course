@@ -1,6 +1,6 @@
 public Id insertCourse(String name, String details, Integer credits) {
     // code here
-    if(credits >=0 && credits <5)
+    if(credits >=0 && credits <4)
     {
         apxio__Course__c Course =  new apxio__Course__c();
         Course.Name = name;
