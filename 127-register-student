@@ -12,6 +12,6 @@ public String registerStudent(String name, String phone, String email) {
     apxio__Student__c students = [SELECT Id, apxio__Registration_Number__c FROM apxio__Student__c WHERE Id = :student.Id];
 
     // Access the Registration Number and debug
-    String result = students.apxio__Registration_Number__c;
-    return result;
+   return students.apxio__Registration_Number__c;
+      
 } 
