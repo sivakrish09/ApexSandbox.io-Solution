@@ -1,12 +1,17 @@
 public String registerStudent(String name, String phone, String email) {
     // code here
-    apxio__Student__c student = new apxio__Student__c ();
+    apxio__Student__c student = new apxio__Student__c();
     student.Name = name;
     student.apxio__Email__c = email;
     student.apxio__Phone__c = phone;
+
+    // Insert the student record
     Insert student;
 
-    apxio__Student__c studentQUery = [SELECT apxio__Registration_Number__c FROM apxio__Student__c WHERE Id = student.Id];
-    String result = studentQUery.apxio__Registration_Number__c;
+    // Query for the inserted student using the Id
+    apxio__Student__c students = [SELECT Id, apxio__Registration_Number__c FROM apxio__Student__c WHERE Id = :student.Id];
+
+    // Access the Registration Number and debug
+    String result = students.apxio__Registration_Number__c;
     return result;
 } 
