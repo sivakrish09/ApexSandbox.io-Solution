@@ -1,0 +1,18 @@
+public Id classFromCourse(String courseName) {
+    // code here
+    if(courseName == null) return null;
+    List<apxio__Course__c> courseList = [SELECT Id,Name
+                                        FROM apxio__Course__c
+                                        WHERE Name =:courseName ];
+    List<apxio__Class__c> classList = new List<apxio__Class__c>();
+    for(apxio__Course__c a:courseList)
+    {
+        apxio__Class__c cl = new apxio__Class__c();
+        cl.Name = a.Name;
+        cl.apxio__Course__c = a.Id;
+        classList.add(cl);
+    }
+    insert classList;
+    return classList.Id;
+
+}
