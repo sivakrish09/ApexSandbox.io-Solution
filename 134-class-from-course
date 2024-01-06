@@ -13,6 +13,6 @@ public Id classFromCourse(String courseName) {
         classList.add(cl);
     }
     insert classList;
-    return classList.Id;
+    return classList[0].Id;
 
 }
