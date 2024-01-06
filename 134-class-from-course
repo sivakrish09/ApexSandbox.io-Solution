@@ -4,6 +4,7 @@ public Id classFromCourse(String courseName) {
     List<apxio__Course__c> courseList = [SELECT Id,Name
                                         FROM apxio__Course__c
                                         WHERE Name =:courseName ];
+    if(courseList.isEmpty()) return null;
     List<apxio__Class__c> classList = new List<apxio__Class__c>();
     for(apxio__Course__c a:courseList)
     {
