@@ -16,11 +16,11 @@ public List<Account> checkAccounts(List<Account> accounts)
    }
    Catch(system.IllegalArgumentException e)
    {
-      system.debug(e.getMessage();) 
+      system.debug(e.getMessage()) ;
    }
    Catch(AccountException ae)
    {
-       system.debug(ae.getMessage();) ;
+       system.debug(ae.getMessage()) ;
    }
    return accounts;
 }
