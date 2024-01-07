@@ -2,8 +2,7 @@ public List<Account> checkAccounts(List<Account> accounts)
 {
     if(accounts == null) throw new IllegalArgumentException('accounts should not be null');
     
-   try
-   {
+
       for(Account a: accounts)
       {
           if(string.isEmpty(a.BillingCity))
@@ -11,17 +10,7 @@ public List<Account> checkAccounts(List<Account> accounts)
               throw new AccountException('Invalid BillingCity');
               
           }
-      }
-      
-   }
-   Catch(system.IllegalArgumentException e)
-   {
-      system.debug(e.getMessage()) ;
-   }
-   Catch(AccountException ae)
-   {
-       system.debug(ae.getMessage()) ;
-   }
+      }    
    return accounts;
 }
 
