@@ -12,16 +12,17 @@ public List<Account> checkAccounts(List<Account> accounts)
               
           }
       }
-      return accounts;
+      
    }
    Catch(system.IllegalArgumentException e)
    {
-       return e.getMessage();
+      system.debug(e.getMessage();) 
    }
    Catch(AccountException ae)
    {
-       return ae.getMessage();
+       system.debug(ae.getMessage();) ;
    }
+   return accounts;
 }
 
 //do not remove the following custom-defined exception)
